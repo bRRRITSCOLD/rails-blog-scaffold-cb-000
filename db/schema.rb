@@ -13,13 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20171015193637) do
 
-  create_table "apartments", force: :cascade do |t|
-    t.string   "address"
-    t.float    "price"
-    t.text     "description"
-    t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
